@@ -1,0 +1,44 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: antiquewhite;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    padding: 12px;
+}
+
+nav a {
+    margin-right: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card {
+    margin: 35px auto;
+    padding: 20px;
+    background-color: bisque;
+    border: 1px solid black;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 700px;
+}
+
+.photo {
+    width: 200px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid black;
+    margin: 12px;
+}
+
+.decor {
+    list-style: none;
+    padding-left: 0;
+
+}
+
+.photo {
+    border: .5px solid black;
+}
