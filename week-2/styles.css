@@ -27,6 +27,7 @@ nav {
 
 }
 .splash {
+    background: url("assets/images/hero.jpg");
     height: 450px;
     background-size: cover;
     background-position: center top;
@@ -34,7 +35,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    outline: 4px solid red;
 
 }
 
