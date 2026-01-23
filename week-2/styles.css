@@ -2,7 +2,7 @@ body {
     margin: 0;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: black;
-    background: #d836e0;
+    background: #C09CD9;
 }
 
 #wrapper {
@@ -69,7 +69,7 @@ nav {
 .box {
     width: 250px;
     background: #d2b9fa;
-    border: 2px solid #9a63f2;
+    border: 2px solid white;
     text-align: center;
     padding: 15px;
 }
@@ -79,10 +79,11 @@ nav {
     border: 2px solid #9a63f2;
     margin-bottom: 10px;
     padding: 10px;
+    height: 240px;
 }
 
 .imgBox img {
-    height: 150px;
+    height: 220px;
     width: 100%;
     display: block;
     object-fit: cover;
