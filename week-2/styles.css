@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    background: #d836e0;
+}
+
+#wrapper {
+    margin: 0 auto;
+    max-width: 1100px; 
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: maroon;
+}
+
+.navigation a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+
+}
+.splash {
+    background: url("assets/images/marvels-guardians-of-the-galaxy-4k-wallpaper-3840x2160-uhdpaper-com-533_1.png");
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splashContent {
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+    background: rgba(0,0,0,0.25);
+}
+
+.full {
+    margin: 20px auto;
+    padding: 10px 20px;
+    max-width: 760px;
+    background: #d2b9fa;
+    border: 2px solid #9A63F2;
+}
+
+.full p {
+    margin: 0;
+}
+
+/*characters*/
+.content {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.box {
+    width: 250px;
+    background: #d2b9fa;
+    border: 2px solid #9a63f2;
+    text-align: center;
+    padding: 15px;
+}
+
+.imgBox {
+
+    border: 2px solid #9a63f2;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.imgBox img {
+    height: 150px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+footer {
+    background:maroon;
+    color: white;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+footer .copyright p {
+    margin: 10px;
+    font-size: 10px;
+}
+
+footer .links a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+}
+
+.logo img {
+    height: 40px;
+    display: block;
+}
