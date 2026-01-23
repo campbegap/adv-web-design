@@ -27,13 +27,16 @@ nav {
 
 }
 .splash {
-    background: url("assets/images/marvels-guardians-of-the-galaxy-4k-wallpaper-3840x2160-uhdpaper-com-533_1.png");
-    height: 360px;
+    background: url("assets/images/marvels-guardians-of-the-galaxy-4k-wallpaper-3840x2160-uhdpaper-com-533_1.jpg");
+    height: 450px;
     background-size: cover;
-    background-position: center;
+    background-position: center top;
+    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
+    outline: 4px solid red;
+
 }
 
 .splashContent {
