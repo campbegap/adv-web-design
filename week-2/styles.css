@@ -69,14 +69,14 @@ nav {
 .box {
     width: 250px;
     background: #d2b9fa;
-    border: 2px solid white;
+    border: 2px solid rgb(108, 98, 98);
     text-align: center;
     padding: 15px;
 }
 
 .imgBox {
 
-    border: 2px solid #9a63f2;
+    border: 2px solid white;
     margin-bottom: 10px;
     padding: 10px;
     height: 240px;
