@@ -59,6 +59,17 @@ nav {
     margin: 0;
 }
 
+.nwidth {
+    margin: 35px 0 0;
+    padding: 16px;
+    width: 100%
+}
+
+.nwidth p {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
 /*characters*/
 .content {
     margin: 20px;
@@ -109,6 +120,8 @@ footer .links a {
     color: white;
     text-decoration: none;
     margin: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .logo img {
