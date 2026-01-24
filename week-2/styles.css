@@ -46,11 +46,13 @@ nav {
 }
 
 .full {
-    margin: 20px auto;
+    margin: 20px 0;
     padding: 10px 20px;
-    max-width: 760px;
+    max-width: none;;
     background: #d2b9fa;
-    border: 2px solid #9A63F2;
+    border-top: 2px solid #9A63F2;
+    border-bottom: 2px solid #9a63f2;
+    box-sizing: border-box;
 }
 
 .full p {
