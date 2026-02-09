@@ -27,7 +27,8 @@
 .cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 12px;
     margin-top: -1em;
     padding: 5px;
 }
@@ -39,7 +40,6 @@
     max-height: 300px;
     flex: 1 1 200px;
     position: relative;
-    border: 2px solid black;
 }
 
 .card a {
@@ -162,10 +162,6 @@ h2 {
 }
 
 
-.flip-card-front li {
-    margin-left: 6px;
-}
-
 .flip-card-front .card-content {
     background: white;
 }
@@ -174,3 +170,8 @@ h2 {
     margin-top: 12px;
     margin-bottom: 10px;
     }
+
+    .flip-card {
+    border: 2px solid black;
+    box-sizing: border-box;
+}
