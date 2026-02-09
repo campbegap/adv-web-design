@@ -165,3 +165,14 @@ ul {
     color: darkolivegreen;
     transform: rotateY(180deg);
 }
+
+.flip-card-front h3,
+.flip-card-front ul {
+    top: 0;
+}
+
+.flip-card-front .pixHolder img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
