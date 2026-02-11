@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Car Finders Inc. - Find your ideal car!</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <header class="header">
+            <img
+                class="logo"
+                src="images/carfinders_logo.png"
+                alt="Car Finders Inc. Logo"
+            />
+            <h1>Ideal Car</h1>
+        </header>
+
+        <main>
+        <form
+            id="carForm"
+            action="formres.html"
+            method="get"
+        >
+
+            <fieldset>
+            <legend>Vehicle Information</legend>
+
+            <label for="manufacturer">Manufacturer</label>
+            <select
+                id="manufacturer"
+                name="manufacturer"
+                required
+            >
+                <option value="">Select one...</option>
+
+                <optgroup label="American Brands">
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Dodge">Dodge</option>
+                </optgroup>
+
+                <optgroup label="Japanese Brands">
+                <option value="Toyota">Toyota</option>
+                <option value="Honda">Honda</option>
+                <option value="Nissan">Nissan</option>
+                </optgroup>
+
+                <optgroup label="European Brands">
+                <option value="BMW">BMW</option>
+                <option value="Audi">Audi</option>
+                <option value="Mercedes">Mercedes</option>
+                </optgroup>
+            </select>
+
+            <br /><br />
+
+            <label for="color">Color</label>
+            <input
+                type="color"
+                id="color"
+                name="color"
+            />
+
+            <br /><br />
+
+            <label for="license">License Plate Number</label>
+            <input
+                type="text"
+                id="license"
+                name="license"
+                placeholder="ABC-1234"
+                size="12"
+                required
+                minlength="5"
+                maxlength="10"
+            />
+            </fieldset>
+
+            <fieldset>
+            <legend>Type of Drive</legend>
+
+            <input
+                type="checkbox"
+                id="fwd"
+                name="drive"
+                value="FWD"
+            />
+            <label for="fwd">FWD</label>
+            <br />
+
+            <input
+                type="checkbox"
+                id="awd"
+                name="drive"
+                value="AWD"
+            />
+            <label for="awd">AWD</label>
+            <br />
+
+            <input
+                type="checkbox"
+                id="rwd"
+                name="drive"
+                value="RWD"
+            />
+            <label for="rwd">RWD</label>
+            <br />
+
+            <input
+                type="checkbox"
+                id="fourwd"
+                name="drive"
+                value="4WD"
+            />
+            <label for="fourwd">4WD</label>
+            </fieldset>
+
+            <fieldset>
+            <legend>Budget and Year Range</legend>
+
+            <label for="budget">Budget</label>
+            <br />
+            <input
+                type="number"
+                id="budget"
+                name="budget"
+                placeholder="25000"
+                size="10"
+                required
+                min="0"
+                step="500"
+            />
+
+            <br /><br />
+
+            <label for="yearMin">Year Min.</label>
+            <br />
+            <input
+                type="number"
+                id="yearMin"
+                name="yearMin"
+                placeholder="2015"
+                size="4"
+                required
+                min="1950"
+                max="2026"
+            />
+
+            <br /><br />
+
+            <label for="yearMax">Year Max.</label>
+            <br />
+            <input
+                type="number"
+                id="yearMax"
+                name="yearMax"
+                placeholder="2020"
+                size="4"
+                required
+                min="1950"
+                max="2026"
+            />
+            </fieldset>
+
+            <fieldset>
+            <legend>Additional Comments</legend>
+
+            <label for="comments">Comments</label>
+            <br />
+            <textarea
+                id="comments"
+                name="comments"
+                rows="5"
+                cols="60"
+                maxlength="500"
+            ></textarea>
+            </fieldset>
+
+            <br />
+
+            <input
+            type="submit"
+            id="process"
+            value="Submit Profile"
+            />
+
+        </form>
+        </main>
+    </body>
+</html>
