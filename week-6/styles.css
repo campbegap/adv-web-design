@@ -98,6 +98,11 @@ nav a{
 
 .flip-card{
     perspective:1000px;
+    transition: transform 0.2s ease;
+}
+
+.flip-card:hover{
+    transform: translateY(-6px);
 }
 
 .flip-in{
@@ -112,6 +117,7 @@ nav a{
 
 .flip-card:hover .flip-in{
     transform:rotateY(180deg);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.18);
 }
 
 .flip-front,
