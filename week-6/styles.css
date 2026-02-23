@@ -118,7 +118,7 @@ nav a{
 .flip-card:hover .flip-in{
     transform:rotateY(180deg);
     border-color: #ceb888;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 45px rgba(0,0,0,0.15);
 }
 
 .flip-front,
