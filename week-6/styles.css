@@ -11,6 +11,10 @@ body{
     display: block;
 }
 
+header > div{
+    position: relative;
+}
+
 nav{
     position:absolute;
     height: 100vh;
