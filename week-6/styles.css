@@ -127,6 +127,8 @@ nav a{
     height:100%;
     backface-visibility:hidden;
     background:white;
+    box-sizing:border-box;
+
 }
 
 .flip-back{
