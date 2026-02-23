@@ -62,6 +62,8 @@ nav a{
     nav{
         position:static;
         transform:translateY(0);
+        height: auto;
+        background: black;
     }
 
     nav ul{
