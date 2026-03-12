@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f8f2;
+    color: #1f1f1f;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #5f7c5b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+}
+
+.favi-logo {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.favi-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav {
+    display: block;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    background-color: #7f9c74;
+    padding: 10px 16px;
+    border-radius: 6px;
+}
+
+.navbar li a:hover {
+    background-color: #8ec3e6;
+}
+
+.navbar li a:active {
+    background-color: #4f684b;
+}
+
+.navbar li:first-child a {
+    border: 2px solid #d8e3cf;
+}
+
+.navbar li:last-child a {
+    border: 2px solid #d8e3cf;
+}
+
+.banner {
+    text-align: center;
+    padding: 40px;
+    margin: 25px;
+    background-color: #d8e3cf;
+    border-bottom: 4px solid #4a90b8;
+}
+
+.banner h2 {
+    color: #2f4630;
+    font-size: 32px;
+}
+
+.home-img {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.img-card img {
+    width: 300px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #c7d4c5;
+    box-shadow: 2px 2px 6px #d6dfd3;
+}
+
+.img-card img:hover {
+    filter: brightness(1.05);
+}
+
+.home-par {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px;
+}
+
+.textbox {
+    background-color: white;
+    width: 400px;
+    min-height: 220px;
+    padding: 25px;
+    border-top: 4px solid #4a90b8;
+    border: 1px solid #d8e3cf;
+}
+
+.textbox h3 {
+    margin-bottom: 12px;
+    color: #2f4630;
+}
+
+.form {
+    background-color: #d8e3cf;
+    margin: 25px;
+    padding: 25px;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form h3 {
+    margin-bottom: 12px;
+    color: #2f4630;
+}
+
+input[type="text"] {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #a9b8a0;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #5f9ecb;
+    border-color: #5f9ecb;
+}
+
+button {
+    width: fit-content;
+    padding: 10px 18px;
+    background-color: #5f7c5b;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8ec3e6;
+}
+
+footer p {
+    background-color: #5f7c5b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+.setup-intro {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.setup-steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 25px;
+    padding: 25px;
+    background-color: white;
+    border-left: 4px solid #4a90b8;
+    border: 1px solid #d8e3cf;
+}
+
+.setup-steps:nth-child(even) {
+    background-color: #f7fbf8;
+}
+
+.steptxt,
+.step-text {
+    width: 500px;
+}
+
+.steptxt h3,
+.step-text h3 {
+    color: #2f4630;
+    margin-bottom: 10px;
+}
+
+.step-img img {
+    width: 280px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border: 1px solid #c7d4c5;
+    box-shadow: 2px 2px 6px #d6dfd3;
+}
+
+.c3-intro {
+    display: flex;
+    justify-content: center;
+    margin: 25px;
+}
+
+.flippy-cards {
+    margin: 25px;
+}
+
+.flippy-cards h3 {
+    text-align: center;
+    color: #2f4630;
+    margin-bottom: 15px;
+}
+
+.flip-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plant-cards,
+.fishy-front {
+    width: 230px;
+    height: 320px;
+    position: relative;
+    perspective: 1000px;
+}
+
+.flip-front,
+.flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
+    border: 1px solid #d8e3cf;
+    box-shadow: 2px 2px 6px #d6dfd3;
+    transition: transform 0.8s ease;
+}
+
+.flip-front {
+    background-color: white;
+    text-align: center;
+}
+
+.flip-front img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.flip-front h4 {
+    padding: 12px;
+    color: #2f4630;
+}
+
+.flip-back {
+    background-color: #d8e3cf;
+    transform: rotateY(180deg);
+    padding: 20px;
+    text-align: center;
+    border-top: 4px solid #4a90b8;
+}
+
+.flip-back h4 {
+    margin-bottom: 10px;
+    color: #2f4630;
+}
+
+.plant-cards:nth-child(odd) .flip-back {
+    background-color: #eef6ee;
+}
+
+.fishy-front:nth-child(even) .flip-back {
+    background-color: #eaf4fb;
+}
+
+.plant-cards:hover .flip-front,
+.fishy-front:hover .flip-front {
+    transform: rotateY(180deg);
+}
+
+.plant-cards:hover .flip-back,
+.fishy-front:hover .flip-back {
+    transform: rotateY(360deg);
+}
+
+.hamburger,
+.close {
+    display: none;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        align-self: flex-end;
+    }
+
+    nav {
+        width: 100%;
+    }
+
+    #navbar {
+        display: none;
+        position: relative;
+        width: 100%;
+        background-color: #5f7c5b;
+        padding: 20px 0;
+    }
+
+    #navbar:target {
+        display: block;
+    }
+
+    .close {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .home-par {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-img {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .textbox {
+        width: 90%;
+    }
+
+    .img-card img {
+        width: 90%;
+        height: auto;
+    }
+
+    input[type="text"] {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .setup-steps {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .steptxt,
+    .step-text {
+        width: 90%;
+    }
+
+    .step-img img {
+        width: 90%;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .flip-cont {
+        flex-direction: column;
+        align-items: center;
+    }
+}
